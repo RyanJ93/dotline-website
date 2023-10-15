@@ -1,0 +1,16 @@
+section.slide {
+    width: 100%;
+
+    div.container {
+        max-width: 1200px;
+        padding: 84px 0;
+        display: flex;
+        margin: auto;
+        width: 100%;
+
+        @media (max-width: 480px){
+            flex-wrap: wrap;
+            padding: 48px 0;
+        }
+    }
+}

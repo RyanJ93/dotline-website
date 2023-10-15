@@ -1,0 +1,56 @@
+div.localePicker {
+    display: inline-block;
+    position: relative;
+
+    div.icon {
+        border-radius: 12px;
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+    }
+
+    div.picker {
+        position: absolute;
+        border-radius: 3px;
+        padding: 6px;
+        display: none;
+        z-index: 20;
+        right: 0;
+
+        &[data-orientation="bottom"] {
+            top: 30px;
+        }
+
+        &[data-orientation="top"] {
+            bottom: 30px;
+        }
+
+        &[data-show="true"] {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+
+    div.overlay {
+        position: fixed;
+        display: none;
+        height: 100%;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+        &[data-show="true"] {
+            display: block;
+        }
+    }
+}

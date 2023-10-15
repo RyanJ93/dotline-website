@@ -1,0 +1,20 @@
+div.textSlideContent {
+    box-sizing: border-box;
+    align-self: center;
+    flex-grow: 1;
+
+    &[data-inverted="false"] {
+        padding-left: 54px;
+    }
+
+    &[data-inverted="true"] {
+        padding-right: 54px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 12px !important;
+        margin-bottom: 36px;
+        text-align: center;
+        order: 1;
+    }
+}

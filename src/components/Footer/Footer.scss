@@ -1,0 +1,23 @@
+footer.footer {
+    width: 100%;
+
+    div.container {
+        box-sizing: border-box;
+        max-width: 1200px;
+        padding: 12px;
+        margin: auto;
+        width: 100%;
+
+        div.controls {
+            float: right;
+
+            & > div {
+                vertical-align: middle;
+
+                &:first-child {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

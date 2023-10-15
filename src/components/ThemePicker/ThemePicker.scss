@@ -1,0 +1,17 @@
+div.themePicker {
+    display: inline-block;
+    font-size: 20px;
+    width: 20px;
+
+    &[data-current-theme="light"] > div[data-theme="light"] {
+        display: none;
+    }
+
+    &[data-current-theme="dark"] > div[data-theme="dark"] {
+        display: none;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+}

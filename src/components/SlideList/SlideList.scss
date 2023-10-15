@@ -1,0 +1,35 @@
+div.centeredSlide {
+    text-align: center;
+    width: 100%;
+
+    a {
+        display: inline-block;
+        font-size: 20px;
+    }
+}
+
+p.title {
+    margin: 0 0 24px 0;
+    font-size: 48px;
+}
+
+p.text {
+    font-size: 18px;
+    margin: 0;
+}
+
+p.note {
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 480px){
+    p.title {
+        font-size: 36px;
+    }
+
+    p.text {
+        font-size: 16px;
+    }
+}

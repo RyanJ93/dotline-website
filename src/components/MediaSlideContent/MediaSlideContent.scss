@@ -1,0 +1,24 @@
+div.mediaSlideContent {
+    align-self: center;
+    flex-shrink: 0;
+
+    img {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    @media (max-width: 720px){
+        img {
+            max-width: 200px !important;
+        }
+    }
+
+    @media (max-width: 480px){
+        width: 100%;
+        order: 2;
+
+        img {
+            max-width: 100% !important;
+        }
+    }
+}

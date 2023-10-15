@@ -1,0 +1,188 @@
+$primary-color: #1C3A57;
+$secondary-color: #30659B;
+$accent-color: #2E5D90;
+
+$bg-primary-color: #1C3A57;
+$bg-secondary-color: #30659B;
+$bg-accent-color: #478ED9;
+
+$text-primary-color: #D8D8D8;
+$text-secondary-color: #93A0AF;
+$text-accent-color: #478ED9;
+
+$border-primary-color: #D8D8D8;
+$border-secondary-color: #93A0AF;
+$border-accent-color: #478ED9;
+
+$success-color: #27ae60;
+$danger-color: #e74c3c;
+$warn-color: #f1c40f;
+
+$message-bubble-received: #30659B;
+$message-bubble-sent: darken($message-bubble-received, 25%);
+
+$white: #FFFFFF;
+$black: #222222;
+$blue: #1C3A57;
+
+$white-loader-image-path: '/public/assets/rounded-loader-dark-mode.svg';
+$loader-image-path: '/public/assets/rounded-loader-dark-mode.svg';
+$white-logo-image-path: '/public/assets/logo-dark-mode.svg';
+$logo-image-path: '/public/assets/logo-dark-mode.svg';
+
+@mixin darkTheme(){
+    .border-secondary { border-color: $border-secondary-color !important; }
+    .border-primary { border-color: $border-primary-color !important; }
+    .border-accent { border-color: $border-accent-color !important; }
+
+    .bg-secondary { background-color: $bg-secondary-color; }
+    .bg-primary { background-color: $bg-primary-color; }
+    .bg-accent { background-color: $bg-accent-color; }
+
+    .text-secondary { color: $text-secondary-color; }
+    .text-primary { color: $text-primary-color; }
+    .text-accent { color: $text-accent-color; }
+
+    .border-success { border-color: $success-color !important; }
+    .bg-success { background-color: $success-color; }
+    .text-success { color: $success-color; }
+
+    .border-danger { border-color: $danger-color !important; }
+    .bg-danger { background-color: $danger-color; }
+    .text-danger { color: $danger-color; }
+
+    .border-warn { border-color: $warn-color !important; }
+    .bg-warn { background-color: $warn-color; }
+    .text-warn { color: $warn-color; }
+
+    .border-white { border-color: $white !important; }
+    .bg-white { background-color: $white; }
+    .text-white { color: $white; }
+
+    .border-black { border-color: $black !important; }
+    .bg-black { background-color: $black; }
+    .text-black { color: $black; }
+
+    .bg-blue { background-color: $blue; }
+
+    .link-secondary, .link-secondary:active {
+        color: $text-secondary-color;
+
+        &:hover {
+            color: darken($text-secondary-color, 25%);
+        }
+    }
+
+    .link-primary, .link-primary:active {
+        color: $text-primary-color;
+
+        &:hover {
+            color: darken($text-primary-color, 25%);
+        }
+    }
+
+    .link-accent, .link-accent:active {
+        color: $text-accent-color;
+
+        &:hover {
+            color: darken($text-accent-color, 25%);
+        }
+    }
+
+    .link-success, .link-success:active {
+        color: $success-color;
+
+        &:hover {
+            color: darken($success-color, 25%);
+        }
+    }
+
+    .link-danger, .link-danger:active {
+        color: $danger-color;
+
+        &:hover {
+            color: darken($danger-color, 25%);
+        }
+    }
+
+    .link-warn, .link-warn:active {
+        color: $warn-color;
+
+        &:hover {
+            color: darken($warn-color, 25%);
+        }
+    }
+
+    .link-black, .link-black:active {
+        color: $black;
+
+        &:hover {
+            color: darken($black, 25%);
+        }
+    }
+
+    .link-white, .link-white:active {
+        color: $white;
+
+        &:hover {
+            color: darken($white, 25%);
+        }
+    }
+
+    button, input[type="reset"], input[type="submit"], .button {
+        background-color: $bg-secondary-color;
+        color: $text-primary-color;
+
+        &:hover {
+            background-color: darken($bg-secondary-color, 15%);
+        }
+
+        &.inverted {
+            background-color: $bg-primary-color;
+
+            &:hover {
+                background-color: darken($bg-primary-color, 15%);
+            }
+        }
+
+        &.success {
+            background-color: $success-color;
+
+            &:hover {
+                background-color: darken($success-color, 15%);
+            }
+        }
+
+        &.danger {
+            background-color: $danger-color;
+
+            &:hover {
+                background-color: darken($danger-color, 15%);
+            }
+        }
+    }
+
+    select {
+        border: 3px solid $border-secondary-color;
+        background-color: $bg-primary-color;
+        color: $text-primary-color;
+    }
+
+    .loader-img-white { background-image: url($white-loader-image-path); }
+
+    .logo-img-white { background-image: url($white-logo-image-path); }
+
+    .loader-img { background-image: url($loader-image-path); }
+
+    .logo-img { background-image: url($logo-image-path); }
+}
+
+:global {
+    html[data-theme="dark"] {
+        @include darkTheme();
+    }
+
+    @media ( prefers-color-scheme: dark ) {
+        @include darkTheme();
+    }
+}

@@ -1,0 +1,20 @@
+@use 'theme';
+
+:global {
+    html, body {
+        font-family: 'Source Sans Pro', sans-serif;
+        -webkit-text-size-adjust: 100%;
+        margin: 0;
+    }
+
+    .full-viewport {
+        padding-top: env(safe-area-inset-top, 0px) !important;
+        box-sizing: border-box;
+
+        .full-viewport-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
