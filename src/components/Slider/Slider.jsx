@@ -1,21 +1,23 @@
 'use strict';
 
+import { withTranslation } from 'react-i18next';
 import styles from './Slider.scss';
 import React from 'react';
 
 class Slider extends React.Component {
     #renderDesktopVersion(){
+        const { t } = this.props;
         return (
             <div className={styles.desktopContainer}>
                 <div className={'bg-secondary text-white ' + styles.desktopInnerContainer}>
                     <div className={styles.leftContainer}>
                         <div className={'logo-img-white ' + styles.logo} />
-                        <h2 className={styles.slogan}>Start privately chatting with your contacts, now</h2>
-                        <h3 className={styles.catchphrase}>Cutting-edge cryptography at your service, to protect your privacy with ease</h3>
-                        <a className={'button inverted ' + styles.button}>Get started</a>
+                        <h2 className={styles.slogan}>{t('slider.slogan')}</h2>
+                        <h3 className={styles.catchphrase}>{t('slider.catchphrase')}</h3>
+                        <a className={'button inverted ' + styles.button} href={'https://app.dotline.enricosola.dev'}>{t('slider.getStarted')}</a>
                     </div>
                     <div className={styles.rightContainer}>
-                        <img className={styles.preview} src={'/assets/images/dark.png'} />
+                        <img className={styles.preview} src={'/assets/images/slider.png'} alt={'DotLine'} />
                     </div>
                 </div>
             </div>
@@ -23,19 +25,20 @@ class Slider extends React.Component {
     }
 
     #renderMobileVersion(){
+        const { t } = this.props;
         return (
             <div className={styles.mobileContainer}>
-                <div className={'bg-secondary text-white' + styles.mobileInnerContainer}>
+                <div className={'bg-secondary text-white ' + styles.mobileInnerContainer}>
                     <div>
                         <div className={'logo-img-white ' + styles.logo} />
-                        <h2 className={styles.slogan}>Start privately chatting with your contacts, now</h2>
+                        <h2 className={styles.slogan}>{t('slider.slogan')}</h2>
                     </div>
                     <div>
-                        <img className={styles.preview} src={'/assets/images/dark.png'} />
+                        <img className={styles.preview} src={'/assets/images/slider.png'} alt={'DotLine'} />
                     </div>
                     <div>
-                        <h3 className={styles.catchphrase}>Cutting-edge cryptography at your service, to protect your privacy with ease</h3>
-                        <a className={'button inverted ' + styles.button}>Get started</a>
+                        <h3 className={styles.catchphrase}>{t('slider.catchphrase')}</h3>
+                        <a className={'button inverted ' + styles.button} href={'https://app.dotline.enricosola.dev'}>{t('slider.getStarted')}</a>
                     </div>
                 </div>
             </div>
@@ -52,4 +55,4 @@ class Slider extends React.Component {
     }
 }
 
-export default Slider;
+export default withTranslation(null, { withRef: true })(Slider);

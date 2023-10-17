@@ -4,19 +4,26 @@ footer.footer {
     div.container {
         box-sizing: border-box;
         max-width: 1200px;
+        display: flex;
         padding: 12px;
         margin: auto;
         width: 100%;
 
         div.controls {
-            float: right;
-
             & > div {
                 vertical-align: middle;
 
                 &:first-child {
                     margin-right: 12px;
                 }
+            }
+        }
+
+        div.credits {
+            flex-grow: 1;
+
+            p {
+                margin: 0;
             }
         }
     }

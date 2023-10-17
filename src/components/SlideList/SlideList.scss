@@ -24,7 +24,19 @@ p.note {
     margin: 0;
 }
 
+div.gitHubLinks > div {
+    margin-top: 18px;
+
+    &:first-child {
+        margin: 0 !important;
+    }
+}
+
 @media (max-width: 480px){
+    div.gitHubLinks > div {
+        text-align: center;
+    }
+
     p.title {
         font-size: 36px;
     }

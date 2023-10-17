@@ -1,5 +1,27 @@
 {
     "header.linkTitle": "Get back top.",
+    "footer.credits": "Made with ❤\uFE0F by ",
     "perkList.secure.title": "Secure",
-    "perkList.secure.text": "DotLine has built-in end-to-end encryption support out of the box, this allows you to enjoy a fully private messaging service."
+    "perkList.secure.text": "DotLine has built-in end-to-end encryption support out of the box, this allows you to enjoy a fully private messaging service.",
+    "perkList.privacy.title": "Privacy focused",
+    "perkList.privacy.text": "Pick your favourite username and a good password, no e-mail address, phone number or other piece of personal information needed.",
+    "perkList.noAppRequired.title": "No app required",
+    "perkList.noAppRequired.text": "You don't need to download any new application to start using DotLine, your web browser is more than enough.",
+    "perkList.flexible.title": "Flexible",
+    "perkList.flexible.text": "Not only plain text messages, DotLine supports attachments, voice messages, geo location and stickers, both static and animated.",
+    "slideList.alwaysReady.title": "Always ready",
+    "slideList.alwaysReady.text": "No matter where you are and what device you are using you are ready to use DotLine, all your conversations and messages are there with you, everything is securely stored in the cloud and automatically synchronized across your devices.",
+    "slideList.everythingUnderControl.title": "Everything under control",
+    "slideList.everythingUnderControl.text": "Enjoy a service focused on privacy and data protection: every message you send is stored safely using the most advanced cryptographic technologies and protected by the end-to-end encryption, furthermore you can track and manage every access made to your account to prevent any suspicious activity.",
+    "slideList.noSecretBehind.title": "No secret behind",
+    "slideList.noSecretBehind.text": "DotLine has no secrets, source code is completely open-source and available for everyone for free, you can use the service free of charge or you could even setup your very own messaging platform using DotLine source code and assets, learn more on the project's official GitHub repositories.",
+    "slideList.gitHubLink.server": "DotLine server source code",
+    "slideList.gitHubLink.client": "DotLine client source code",
+    "slideList.gitHubLink.website": "This website source code",
+    "slideList.tryOut": "Try out DotLine now!",
+    "slideList.getStarted": "Get started",
+    "slideList.disclaimer": "DotLine is an academic project made by Enrico Sola for academic purposes, this is not intended for commercial purposes",
+    "slider.slogan": "Start privately chatting with your contacts, now",
+    "slider.catchphrase": "Cutting-edge cryptography at your service, to protect your privacy with ease",
+    "slider.getStarted": "Get started"
 }
