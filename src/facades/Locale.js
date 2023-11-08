@@ -23,7 +23,8 @@ class Locale extends Facade {
         if ( index > 0 ){
             language = language.substring(0, index);
         }
-        return await i18n.changeLanguage(language);
+        await i18n.changeLanguage(language);
+        document.title = i18n.t('page.title');
     }
 
     /**
